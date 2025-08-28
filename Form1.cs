@@ -143,7 +143,7 @@ namespace Staff_Management
             listView1.Columns.Add("Phone", 100);
             listView1.Columns.Add("Email", 150);
         }
-
+        
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
             ListViewItem clickedItem = listView1.GetItemAt(e.X, e.Y);
@@ -211,6 +211,61 @@ namespace Staff_Management
                 lblWH.Text = duration.Hours + " Hours";
                 lblEmail.Text = email;
                 lblGender.Text = gender;
+            }
+        }
+
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            ListViewItem clickedItem = listView1.GetItemAt(e.X, e.Y);
+            if (clickedItem != null)
+            {
+                string ID = clickedItem.SubItems[0].Text;
+                string Name = clickedItem.SubItems[1].Text;
+                string email = clickedItem.SubItems[2].Text;
+                string phone = clickedItem.SubItems[3].Text;
+                string date = clickedItem.SubItems[4].Text;
+                string HourStart = clickedItem.SubItems[5].Text;
+                string HourEnd = clickedItem.SubItems[6].Text;
+                string gender = "";
+                if (clickedItem.ImageIndex == 0)
+                {
+                    gender = "Male";
+                    pbManWoman.Visible = true;
+                    pbManWoman.Image = Properties.Resources.man;
+                }
+                else
+                {
+                    gender = "Female";
+                    pbManWoman.Visible = true;
+                    pbManWoman.Image = Properties.Resources.woman;
+                }
+
+                DateTime Date = DateTime.Parse(date);
+                DateTime today = DateTime.Today;
+
+                int years = today.Year - Date.Year;
+
+                if (Date.Date > today.AddYears(-years))
+                    years--;
+
+                DateTime lastBirthday = Date.AddYears(years);
+                int months = today.Month - lastBirthday.Month;
+                if (months < 0)
+                {
+                    months += 12;
+                }
+
+                DateTime lastMonthAnniversary = lastBirthday.AddMonths(months);
+                int days = (today - lastMonthAnniversary).Days;
+                DateTime HS = DateTime.Parse(HourStart);
+                DateTime HE = DateTime.Parse(HourEnd);
+                TimeSpan duration = new TimeSpan();
+                if (HS > HE) duration = (TimeSpan.FromHours(24) - HS.TimeOfDay) + HE.TimeOfDay;
+                else duration = HE - HS;
+
+                Form frmInfo = new EmployeeInfo(ID, Name, phone, years, months, days, duration, email, gender);
+                frmInfo.ShowDialog();
+
             }
         }
     }

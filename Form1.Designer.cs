@@ -54,7 +54,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.pbManWoman = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -73,18 +72,19 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label16 = new System.Windows.Forms.Label();
             this.lblWH = new System.Windows.Forms.Label();
+            this.pbManWoman = new System.Windows.Forms.PictureBox();
             this.gbEmployeeData.SuspendLayout();
             this.grWorkinghours.SuspendLayout();
             this.gbGender.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbManWoman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbManWoman)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(730, 9);
+            this.label1.Location = new System.Drawing.Point(822, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(420, 54);
             this.label1.TabIndex = 0;
@@ -338,17 +338,6 @@
             this.label9.TabIndex = 5;
             this.label9.Text = "View:";
             // 
-            // pbManWoman
-            // 
-            this.pbManWoman.Image = global::Staff_Management.Properties.Resources.man;
-            this.pbManWoman.Location = new System.Drawing.Point(1118, 86);
-            this.pbManWoman.Name = "pbManWoman";
-            this.pbManWoman.Size = new System.Drawing.Size(271, 218);
-            this.pbManWoman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbManWoman.TabIndex = 6;
-            this.pbManWoman.TabStop = false;
-            this.pbManWoman.Visible = false;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -507,6 +496,7 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseClick);
+            this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
             // 
             // errorProvider1
             // 
@@ -533,6 +523,17 @@
             this.lblWH.Size = new System.Drawing.Size(40, 26);
             this.lblWH.TabIndex = 7;
             this.lblWH.Text = "    ";
+            // 
+            // pbManWoman
+            // 
+            this.pbManWoman.Image = global::Staff_Management.Properties.Resources.man;
+            this.pbManWoman.Location = new System.Drawing.Point(1118, 86);
+            this.pbManWoman.Name = "pbManWoman";
+            this.pbManWoman.Size = new System.Drawing.Size(271, 218);
+            this.pbManWoman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbManWoman.TabIndex = 6;
+            this.pbManWoman.TabStop = false;
+            this.pbManWoman.Visible = false;
             // 
             // Form1
             // 
@@ -574,8 +575,8 @@
             this.grWorkinghours.PerformLayout();
             this.gbGender.ResumeLayout(false);
             this.gbGender.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbManWoman)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbManWoman)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
