@@ -190,7 +190,10 @@ namespace Staff_Management
 
                 
                 DateTime lastBirthday = Date.AddYears(years);
+
+
                 int months = today.Month - lastBirthday.Month;
+                if (today.Day < lastBirthday.Day) months--;
                 if (months < 0)
                 {
                     months += 12;
@@ -250,6 +253,7 @@ namespace Staff_Management
 
                 DateTime lastBirthday = Date.AddYears(years);
                 int months = today.Month - lastBirthday.Month;
+                if (today.Day < lastBirthday.Day) months--;
                 if (months < 0)
                 {
                     months += 12;
@@ -267,6 +271,12 @@ namespace Staff_Management
                 frmInfo.ShowDialog();
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new EditForm();
+            form.ShowDialog();
         }
     }
 }
