@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|c:\\users\\asus\\desktop\\daily-coding\\staff management\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|solutionrelative:editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|solutionrelative:editform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\employeeinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|solutionrelative:employeeinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\employeeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|solutionrelative:employeeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\employeeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|solutionrelative:employeeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F857F441-718F-439C-9960-580DFE6E2DEB}|Staff Management.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditForm.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EditForm.cs",
+              "RelativeDocumentMoniker": "EditForm.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EditForm.cs",
+              "RelativeToolTip": "EditForm.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T13:50:27.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAcwBYBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T20:59:08.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EditForm.cs",
+              "RelativeDocumentMoniker": "EditForm.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EditForm.cs [Design]",
+              "RelativeToolTip": "EditForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:43:35.35Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeInfo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EmployeeInfo.Designer.cs",
+              "RelativeDocumentMoniker": "EmployeeInfo.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EmployeeInfo.Designer.cs",
+              "RelativeToolTip": "EmployeeInfo.Designer.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAtwAABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T15:42:06.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T20:59:16.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeeInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EmployeeInfo.cs",
+              "RelativeDocumentMoniker": "EmployeeInfo.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EmployeeInfo.cs",
+              "RelativeToolTip": "EmployeeInfo.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAtwBkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T15:37:15.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeInfo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EmployeeInfo.cs",
+              "RelativeDocumentMoniker": "EmployeeInfo.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\EmployeeInfo.cs [Design]",
+              "RelativeToolTip": "EmployeeInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T15:24:51.261Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Staff Management\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T19:56:28.45Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

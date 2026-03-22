@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA76BE0-9011-4947-AF10-A82D4637A12A}|HospitalSystem.csproj|c:\\users\\asus\\desktop\\daily-coding\\hospitalsystem\\patientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3EA76BE0-9011-4947-AF10-A82D4637A12A}|HospitalSystem.csproj|solutionrelative:patientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA76BE0-9011-4947-AF10-A82D4637A12A}|HospitalSystem.csproj|c:\\users\\asus\\desktop\\daily-coding\\hospitalsystem\\patientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA76BE0-9011-4947-AF10-A82D4637A12A}|HospitalSystem.csproj|solutionrelative:patientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E0C1DD0-9667-4F73-9FCC-7C69E0890AAB}|..\\HospitalDataAccessLayer\\HospitalDataAccessLayer.csproj|c:\\users\\asus\\desktop\\daily-coding\\hospitaldataaccesslayer\\clsdatapatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA76BE0-9011-4947-AF10-A82D4637A12A}|HospitalSystem.csproj|c:\\users\\asus\\desktop\\daily-coding\\hospitalsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3EA76BE0-9011-4947-AF10-A82D4637A12A}|HospitalSystem.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6169B67A-FE03-46F8-8688-F04165EFFFC4}|..\\HospitalBusinessLayer\\HospitalBusinessLayer.csproj|c:\\users\\asus\\desktop\\daily-coding\\hospitalbusinesslayer\\clspatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E0C1DD0-9667-4F73-9FCC-7C69E0890AAB}|..\\HospitalDataAccessLayer\\HospitalDataAccessLayer.csproj|c:\\users\\asus\\desktop\\daily-coding\\hospitaldataaccesslayer\\clsdataaccesssettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA76BE0-9011-4947-AF10-A82D4637A12A}|HospitalSystem.csproj|c:\\users\\asus\\desktop\\daily-coding\\hospitalsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA76BE0-9011-4947-AF10-A82D4637A12A}|HospitalSystem.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientForm.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\PatientForm.cs",
+              "RelativeDocumentMoniker": "PatientForm.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\PatientForm.cs*",
+              "RelativeToolTip": "PatientForm.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T00:41:21.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clsDataAccessSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalDataAccessLayer\\clsDataAccessSettings.cs",
+              "RelativeDocumentMoniker": "..\\HospitalDataAccessLayer\\clsDataAccessSettings.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalDataAccessLayer\\clsDataAccessSettings.cs",
+              "RelativeToolTip": "..\\HospitalDataAccessLayer\\clsDataAccessSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T00:19:05.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsDataPatient.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalDataAccessLayer\\clsDataPatient.cs",
+              "RelativeDocumentMoniker": "..\\HospitalDataAccessLayer\\clsDataPatient.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalDataAccessLayer\\clsDataPatient.cs",
+              "RelativeToolTip": "..\\HospitalDataAccessLayer\\clsDataPatient.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T00:16:56.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "clsPatient.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalBusinessLayer\\clsPatient.cs",
+              "RelativeDocumentMoniker": "..\\HospitalBusinessLayer\\clsPatient.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalBusinessLayer\\clsPatient.cs",
+              "RelativeToolTip": "..\\HospitalBusinessLayer\\clsPatient.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T00:14:37.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\PatientForm.cs",
+              "RelativeDocumentMoniker": "PatientForm.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\PatientForm.cs [Design]*",
+              "RelativeToolTip": "PatientForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T23:26:37.205Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T23:09:23.455Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\HospitalSystem\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowBoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T23:19:30.506Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

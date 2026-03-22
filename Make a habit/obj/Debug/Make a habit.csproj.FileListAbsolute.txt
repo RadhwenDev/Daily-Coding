@@ -1,0 +1,9 @@
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\bin\Debug\Make a habit.exe.config
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\bin\Debug\Make a habit.exe
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\bin\Debug\Make a habit.pdb
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\obj\Debug\Make a habit.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\obj\Debug\Make_a_habit.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\obj\Debug\Make a habit.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\obj\Debug\Make a habit.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\obj\Debug\Make a habit.exe
+C:\Users\ASUS\Desktop\Daily-Coding\Make a habit\obj\Debug\Make a habit.pdb

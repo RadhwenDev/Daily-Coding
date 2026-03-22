@@ -1,0 +1,9 @@
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\bin\Debug\HospitalBusinessLayer.dll
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\bin\Debug\HospitalBusinessLayer.pdb
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\bin\Debug\HospitalDataAccessLayer.dll
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\bin\Debug\HospitalDataAccessLayer.pdb
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\obj\Debug\HospitalBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\obj\Debug\HospitalBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\obj\Debug\Hospital.BB341416.Up2Date
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\obj\Debug\HospitalBusinessLayer.dll
+C:\Users\ASUS\Desktop\Daily-Coding\HospitalBusinessLayer\obj\Debug\HospitalBusinessLayer.pdb

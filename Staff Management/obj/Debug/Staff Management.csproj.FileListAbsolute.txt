@@ -1,0 +1,26 @@
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\bin\Debug\Staff Management.exe.config
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\bin\Debug\Staff Management.exe
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\bin\Debug\Staff Management.pdb
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\obj\Debug\Staff Management.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\obj\Debug\Staff_Management.Form1.resources
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\obj\Debug\Staff_Management.Properties.Resources.resources
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\obj\Debug\Staff Management.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\obj\Debug\Staff Management.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\obj\Debug\Staff Management.exe
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\obj\Debug\Staff Management.pdb
+C:\Users\ASUS\Desktop\C++\Course14\Staff Management\obj\Debug\Staff Management.exe.config
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\bin\Debug\Staff Management.exe.config
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\bin\Debug\Staff Management.exe
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\bin\Debug\Staff Management.pdb
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff Management.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff Management.exe.config
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff_Management.Form1.resources
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff_Management.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff Management.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff Management.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff Management.exe
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff Management.pdb
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff_Management.EmployeeInfo.resources
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff_Management.EditForm.resources
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\Desktop\Daily-Coding\Staff Management\obj\Debug\Staff Ma.0510E147.Up2Date
