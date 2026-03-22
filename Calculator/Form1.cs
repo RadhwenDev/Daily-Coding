@@ -1,0 +1,176 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Calculator
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnDot_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += ".";
+        }
+
+        private void btnOne_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "1";
+        }
+
+        private void btnTwo_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "2";
+        }
+
+        private void btnThree_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "3";
+        }
+
+        private void btnSix_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "6";
+        }
+
+        private void btnFive_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "5";
+        }
+
+        private void btnFour_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "4";
+        }
+
+        private void btnSeven_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "7";
+        }
+
+        private void btnEight_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "8";
+        }
+
+        private void btnNine_Click(object sender, EventArgs e)
+        {
+            txtStore.Text += "9";
+        }
+
+        private void btnZero_Click(object sender, EventArgs e)
+        {
+            if(txtStore.Text != "")
+                txtStore.Text += "0";
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtResult.Clear();
+            txtStore.Clear();
+        }
+        float num;
+        int count;
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            if(txtStore.Text != "")
+            {
+                num = float.Parse(txtStore.Text);
+                txtResult.Text = txtStore.Text + "-";
+                txtStore.Clear();
+                count = 1;
+            }
+        }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "")
+            {
+                num = float.Parse(txtStore.Text);
+                txtResult.Text = txtStore.Text + "+";
+                txtStore.Clear();
+                count = 2;
+            }
+        }
+
+        private void btnMultiple_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "")
+            {
+                num = float.Parse(txtStore.Text);
+                txtResult.Text = txtStore.Text + "x";
+                txtStore.Clear();
+                count = 3;
+            }
+        }
+
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "")
+            {
+                num = float.Parse(txtStore.Text);
+                txtResult.Text = txtStore.Text + "/";
+                txtStore.Clear();
+                count = 4;
+            }
+        }
+
+        private void btnrd_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "")
+            {
+                num = float.Parse(txtStore.Text);
+                txtResult.Text = txtStore.Text + "%";
+                txtStore.Clear();
+                count = 5;
+            }
+        }
+
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+            float ans = 0;
+            switch (count)
+            {
+                case 1:
+                    ans = num - float.Parse(txtStore.Text);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
+                case 2:
+                    ans = num + float.Parse(txtStore.Text);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
+                case 3:
+                    ans = num * float.Parse(txtStore.Text);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
+                case 4:
+                    ans = num / float.Parse(txtStore.Text);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
+                case 5:
+                    ans = num % float.Parse(txtStore.Text);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
+            }
+        }
+    }
+}
