@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -74,25 +76,44 @@ namespace Calculator
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-            if(txtStore.Text != "")
+            char lastChar = txtStore.Text.Last();
+            char[] operators = { '+', '-', '*', '/' };
+            if (txtStore.Text != "" && !operators.Contains(lastChar) )
                 txtStore.Text += "0";
         }
 
+        float num;
+        int count = 0;
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtResult.Clear();
             txtStore.Clear();
+            num = 0;
         }
-        float num;
-        int count;
         private void btnMin_Click(object sender, EventArgs e)
         {
             if(txtStore.Text != "")
             {
-                num = float.Parse(txtStore.Text);
-                txtResult.Text = txtStore.Text + "-";
-                txtStore.Clear();
-                count = 1;
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                {
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear(); break;
+                    }
+
+                    txtResult.Text += input + "-";
+                    txtStore.Clear();
+                    count = 1;
+                }
             }
         }
 
@@ -100,10 +121,26 @@ namespace Calculator
         {
             if (txtStore.Text != "")
             {
-                num = float.Parse(txtStore.Text);
-                txtResult.Text = txtStore.Text + "+";
-                txtStore.Clear();
-                count = 2;
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                {
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear(); break;
+                    }
+
+                    txtResult.Text += input + "+";
+                    txtStore.Clear();
+                    count = 2;
+                }              
             }
         }
 
@@ -111,10 +148,26 @@ namespace Calculator
         {
             if (txtStore.Text != "")
             {
-                num = float.Parse(txtStore.Text);
-                txtResult.Text = txtStore.Text + "x";
-                txtStore.Clear();
-                count = 3;
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                {
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear(); break;
+                    }
+
+                    txtResult.Text += input + "x";
+                    txtStore.Clear();
+                    count = 3;
+                }
             }
         }
 
@@ -122,10 +175,26 @@ namespace Calculator
         {
             if (txtStore.Text != "")
             {
-                num = float.Parse(txtStore.Text);
-                txtResult.Text = txtStore.Text + "/";
-                txtStore.Clear();
-                count = 4;
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                {
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear(); break;
+                    }
+
+                    txtResult.Text += input + "/";
+                    txtStore.Clear();
+                    count = 4;
+                }
             }
         }
 
@@ -133,10 +202,26 @@ namespace Calculator
         {
             if (txtStore.Text != "")
             {
-                num = float.Parse(txtStore.Text);
-                txtResult.Text = txtStore.Text + "%";
-                txtStore.Clear();
-                count = 5;
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                {
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear() ; break;
+                    }
+
+                    txtResult.Text += input + "%";
+                    txtStore.Clear();
+                    count = 5;
+                }
             }
         }
 
@@ -171,6 +256,8 @@ namespace Calculator
                     txtStore.Text = ans.ToString();
                     break;
             }
+            count = 6;
+            num = ans;
         }
     }
 }
