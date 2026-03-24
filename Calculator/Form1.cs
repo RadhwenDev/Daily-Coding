@@ -231,27 +231,32 @@ namespace Calculator
             switch (count)
             {
                 case 1:
-                    ans = num - float.Parse(txtStore.Text);
+                    if (float.TryParse(txtStore.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal1))
+                        ans = num - currentVal1;
                     txtResult.Text += txtStore.Text + " = " + ans;
                     txtStore.Text = ans.ToString();
                     break;
                 case 2:
-                    ans = num + float.Parse(txtStore.Text);
+                    if (float.TryParse(txtStore.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal2))
+                        ans = num + currentVal2;
                     txtResult.Text += txtStore.Text + " = " + ans;
                     txtStore.Text = ans.ToString();
                     break;
                 case 3:
-                    ans = num * float.Parse(txtStore.Text);
+                    if(float.TryParse(txtStore.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal3))
+                        ans = num * currentVal3;
                     txtResult.Text += txtStore.Text + " = " + ans;
                     txtStore.Text = ans.ToString();
                     break;
                 case 4:
-                    ans = num / float.Parse(txtStore.Text);
+                    if (float.TryParse(txtStore.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal4))
+                        ans = num / currentVal4;
                     txtResult.Text += txtStore.Text + " = " + ans;
                     txtStore.Text = ans.ToString();
                     break;
                 case 5:
-                    ans = num % float.Parse(txtStore.Text);
+                    if (float.TryParse(txtStore.Text, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal5))
+                        ans = num % currentVal5;
                     txtResult.Text += txtStore.Text + " = " + ans;
                     txtStore.Text = ans.ToString();
                     break;
