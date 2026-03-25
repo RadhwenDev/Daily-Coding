@@ -51,6 +51,7 @@
             this.btnEqual = new Guna.UI2.WinForms.Guna2Button();
             this.txtStore = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtResult = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnDelet = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnexit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,7 +77,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 41);
+            this.label1.Size = new System.Drawing.Size(151, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "Calculator";
             // 
@@ -443,7 +444,7 @@
             this.btnClear.ShadowDecoration.BorderRadius = 15;
             this.btnClear.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnClear.ShadowDecoration.Enabled = true;
-            this.btnClear.Size = new System.Drawing.Size(162, 45);
+            this.btnClear.Size = new System.Drawing.Size(65, 45);
             this.btnClear.TabIndex = 14;
             this.btnClear.Text = "C";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -538,12 +539,36 @@
             this.txtResult.TabIndex = 21;
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // btnDelet
+            // 
+            this.btnDelet.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelet.BorderRadius = 15;
+            this.btnDelet.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelet.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelet.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnDelet.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.btnDelet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnDelet.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnDelet.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnDelet.Location = new System.Drawing.Point(140, 274);
+            this.btnDelet.Name = "btnDelet";
+            this.btnDelet.ShadowDecoration.BorderRadius = 15;
+            this.btnDelet.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnDelet.ShadowDecoration.Enabled = true;
+            this.btnDelet.Size = new System.Drawing.Size(65, 45);
+            this.btnDelet.TabIndex = 22;
+            this.btnDelet.Text = "⌫";
+            this.btnDelet.Click += new System.EventHandler(this.btnDelet_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
             this.ClientSize = new System.Drawing.Size(430, 617);
+            this.Controls.Add(this.btnDelet);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.txtStore);
             this.Controls.Add(this.btnEqual);
@@ -600,6 +625,9 @@
         private Guna.UI2.WinForms.Guna2Button btnEqual;
         private Guna.UI2.WinForms.Guna2TextBox txtStore;
         private Guna.UI2.WinForms.Guna2TextBox txtResult;
+        private Guna.UI2.WinForms.Guna2Button btnDelete;
+        private Guna.UI2.WinForms.Guna2Button bb;
+        private Guna.UI2.WinForms.Guna2Button btnDelet;
     }
 }
 

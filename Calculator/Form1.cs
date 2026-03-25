@@ -89,16 +89,19 @@ namespace Calculator
             txtResult.Clear();
             txtStore.Clear();
             num = 0;
+            count = 0;
         }
         private void btnMin_Click(object sender, EventArgs e)
         {
-            if(txtStore.Text != "")
+            if(txtStore.Text != "" || count == 7)
             {
                 string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
                 input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
                 input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
-                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
                 {
+                    if (count == 7)
+                        num = prev;
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -119,13 +122,15 @@ namespace Calculator
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            if (txtStore.Text != "")
+            if (txtStore.Text != "" || count == 7)
             {
                 string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
                 input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
                 input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
-                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
                 {
+                    if (count == 7)
+                        num = prev;
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -146,13 +151,16 @@ namespace Calculator
 
         private void btnMultiple_Click(object sender, EventArgs e)
         {
-            if (txtStore.Text != "")
+            if (txtStore.Text != "" || count == 7)
             {
                 string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
                 input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
                 input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
-                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
                 {
+                    if (count == 7)
+                        num = prev;
+                        
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -170,16 +178,17 @@ namespace Calculator
                 }
             }
         }
-
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            if (txtStore.Text != "")
+            if (txtStore.Text != "" || count == 7)
             {
                 string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
                 input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
                 input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
-                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
                 {
+                    if (count == 7)
+                        num = prev;
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -200,12 +209,14 @@ namespace Calculator
 
         private void btnrd_Click(object sender, EventArgs e)
         {
-            if (txtStore.Text != "")
+            if (txtStore.Text != "" || count == 7)
             {
+                if (count == 7)
+                    num = prev;
                 string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
                 input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
                 input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
-                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal))
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
                 {
                     switch (count)
                     {
@@ -263,6 +274,25 @@ namespace Calculator
             }
             count = 6;
             num = ans;
+        }
+        float prev;
+
+        private void btnDelet_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "" && count != 6)
+            {
+                txtStore.Text = txtStore.Text.Remove(txtStore.Text.Length - 1);
+                num /= 10;
+                count = 7;
+            }
+                
+            if (txtResult.Text != "" && count != 6)
+            {
+                txtResult.Text = txtResult.Text.Remove(txtResult.Text.Length - 1);
+                count = 7;
+                prev = num;
+            }
+                
         }
     }
 }
