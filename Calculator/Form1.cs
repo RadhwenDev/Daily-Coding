@@ -93,7 +93,7 @@ namespace Calculator
         }
         private void btnMin_Click(object sender, EventArgs e)
         {
-            if(txtStore.Text != "" || count == 7)
+            if((txtStore.Text != "") || count == 7)
             {
                 string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
                 input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
@@ -111,6 +111,10 @@ namespace Calculator
                         case 4: num /= currentVal; break;
                         case 5: num %= currentVal; break;
                         case 6: txtResult.Clear(); break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
                     }
 
                     txtResult.Text += input + "-";
@@ -122,7 +126,7 @@ namespace Calculator
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            if (txtStore.Text != "" || count == 7)
+            if (txtStore.Text != "" || txtResult.Text.Last() == '²'  || count == 7)
             {
                 string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
                 input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
@@ -140,6 +144,10 @@ namespace Calculator
                         case 4: num /= currentVal; break;
                         case 5: num %= currentVal; break;
                         case 6: txtResult.Clear(); break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
                     }
 
                     txtResult.Text += input + "+";
@@ -170,6 +178,10 @@ namespace Calculator
                         case 4: num /= currentVal; break;
                         case 5: num %= currentVal; break;
                         case 6: txtResult.Clear(); break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
                     }
 
                     txtResult.Text += input + "x";
@@ -198,6 +210,10 @@ namespace Calculator
                         case 4: num /= currentVal; break;
                         case 5: num %= currentVal; break;
                         case 6: txtResult.Clear(); break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
                     }
 
                     txtResult.Text += input + "/";
@@ -227,6 +243,10 @@ namespace Calculator
                         case 4: num /= currentVal; break;
                         case 5: num %= currentVal; break;
                         case 6: txtResult.Clear() ; break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
                     }
 
                     txtResult.Text += input + "%";
@@ -271,6 +291,26 @@ namespace Calculator
                     txtResult.Text += txtStore.Text + " = " + ans;
                     txtStore.Text = ans.ToString();
                     break;
+                case 8:
+                    ans = (float)Math.Sqrt(num);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
+                case 9:
+                    ans = (float)Math.Pow(num,2);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
+                case 10:
+                    ans = (float)Math.Log10(num);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
+                case 11:
+                    ans = (float)Math.Log(num);
+                    txtResult.Text += txtStore.Text + " = " + ans;
+                    txtStore.Text = ans.ToString();
+                    break;
             }
             count = 6;
             num = ans;
@@ -293,6 +333,138 @@ namespace Calculator
                 prev = num;
             }
                 
+        }
+
+        private void btnsqrt_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "" || count == 7)
+            {
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
+                {
+                    if (count == 7)
+                        num = prev;
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear(); break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
+                    }
+
+                    txtResult.Text += input + "√";
+                    txtStore.Clear();
+                    count = 8;
+                }
+            }
+        }
+
+        private void btnsquare_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "" || count == 7)
+            {
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
+                {
+                    if (count == 7)
+                        num = prev;
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear(); break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
+                    }
+
+                    txtResult.Text += input + "²";
+                    txtStore.Clear();
+                    count = 9;
+                }
+            }
+        }
+
+        private void btnln_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "" || count == 7)
+            {
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
+                {
+                    if (count == 7)
+                        num = prev;
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear(); break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
+                    }
+
+                    txtResult.Text += input + "ln";
+                    txtStore.Clear();
+                    count = 10;
+                }
+            }
+        }
+
+        private void btnlog2_Click(object sender, EventArgs e)
+        {
+            if (txtStore.Text != "" || count == 7)
+            {
+                string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
+                input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
+                input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
+                {
+                    if (count == 7)
+                        num = prev;
+                    switch (count)
+                    {
+                        case 0: num = currentVal; break;
+                        case 1: num -= currentVal; break;
+                        case 2: num += currentVal; break;
+                        case 3: num *= currentVal; break;
+                        case 4: num /= currentVal; break;
+                        case 5: num %= currentVal; break;
+                        case 6: txtResult.Clear(); break;
+                        case 8: num = (float)Math.Sqrt(currentVal); break;
+                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        case 10: num = (float)Math.Log10(currentVal); break;
+                        case 11: num = (float)Math.Log(currentVal); break;
+                    }
+
+                    txtResult.Text += input + "log";
+                    txtStore.Clear();
+                    count = 11;
+                }
+            }
         }
     }
 }

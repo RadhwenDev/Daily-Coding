@@ -52,6 +52,10 @@
             this.txtStore = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtResult = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDelet = new Guna.UI2.WinForms.Guna2Button();
+            this.btnsquare = new Guna.UI2.WinForms.Guna2Button();
+            this.btnsqrt = new Guna.UI2.WinForms.Guna2Button();
+            this.btnln = new Guna.UI2.WinForms.Guna2Button();
+            this.btnlog2 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnexit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +98,7 @@
             this.btnDivide.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnDivide.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnDivide.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnDivide.Location = new System.Drawing.Point(325, 274);
+            this.btnDivide.Location = new System.Drawing.Point(324, 361);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.ShadowDecoration.BorderRadius = 15;
             this.btnDivide.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -117,7 +121,7 @@
             this.btnMultiple.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnMultiple.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnMultiple.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnMultiple.Location = new System.Drawing.Point(324, 338);
+            this.btnMultiple.Location = new System.Drawing.Point(324, 427);
             this.btnMultiple.Name = "btnMultiple";
             this.btnMultiple.ShadowDecoration.BorderRadius = 15;
             this.btnMultiple.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -140,7 +144,7 @@
             this.btnPlus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnPlus.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnPlus.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnPlus.Location = new System.Drawing.Point(324, 402);
+            this.btnPlus.Location = new System.Drawing.Point(324, 493);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.ShadowDecoration.BorderRadius = 15;
             this.btnPlus.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -163,7 +167,7 @@
             this.btnMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnMin.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnMin.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnMin.Location = new System.Drawing.Point(324, 466);
+            this.btnMin.Location = new System.Drawing.Point(324, 559);
             this.btnMin.Name = "btnMin";
             this.btnMin.ShadowDecoration.BorderRadius = 15;
             this.btnMin.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -186,7 +190,7 @@
             this.btnThree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnThree.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnThree.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnThree.Location = new System.Drawing.Point(232, 466);
+            this.btnThree.Location = new System.Drawing.Point(232, 559);
             this.btnThree.Name = "btnThree";
             this.btnThree.ShadowDecoration.BorderRadius = 15;
             this.btnThree.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -209,7 +213,7 @@
             this.btnSix.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnSix.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnSix.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnSix.Location = new System.Drawing.Point(232, 402);
+            this.btnSix.Location = new System.Drawing.Point(232, 493);
             this.btnSix.Name = "btnSix";
             this.btnSix.ShadowDecoration.BorderRadius = 15;
             this.btnSix.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -232,7 +236,7 @@
             this.btnNine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnNine.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnNine.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnNine.Location = new System.Drawing.Point(232, 338);
+            this.btnNine.Location = new System.Drawing.Point(232, 427);
             this.btnNine.Name = "btnNine";
             this.btnNine.ShadowDecoration.BorderRadius = 15;
             this.btnNine.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -255,7 +259,7 @@
             this.btnrd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnrd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnrd.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnrd.Location = new System.Drawing.Point(235, 274);
+            this.btnrd.Location = new System.Drawing.Point(325, 295);
             this.btnrd.Name = "btnrd";
             this.btnrd.ShadowDecoration.BorderRadius = 15;
             this.btnrd.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -278,7 +282,7 @@
             this.btnTwo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnTwo.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnTwo.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnTwo.Location = new System.Drawing.Point(140, 466);
+            this.btnTwo.Location = new System.Drawing.Point(140, 559);
             this.btnTwo.Name = "btnTwo";
             this.btnTwo.ShadowDecoration.BorderRadius = 15;
             this.btnTwo.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -301,7 +305,7 @@
             this.btnFive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnFive.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnFive.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnFive.Location = new System.Drawing.Point(140, 402);
+            this.btnFive.Location = new System.Drawing.Point(140, 493);
             this.btnFive.Name = "btnFive";
             this.btnFive.ShadowDecoration.BorderRadius = 15;
             this.btnFive.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -324,7 +328,7 @@
             this.btnEight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnEight.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnEight.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnEight.Location = new System.Drawing.Point(140, 338);
+            this.btnEight.Location = new System.Drawing.Point(140, 427);
             this.btnEight.Name = "btnEight";
             this.btnEight.ShadowDecoration.BorderRadius = 15;
             this.btnEight.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -347,7 +351,7 @@
             this.btnZero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnZero.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnZero.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnZero.Location = new System.Drawing.Point(48, 530);
+            this.btnZero.Location = new System.Drawing.Point(48, 625);
             this.btnZero.Name = "btnZero";
             this.btnZero.ShadowDecoration.BorderRadius = 15;
             this.btnZero.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -370,7 +374,7 @@
             this.btnOne.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnOne.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnOne.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnOne.Location = new System.Drawing.Point(48, 466);
+            this.btnOne.Location = new System.Drawing.Point(48, 559);
             this.btnOne.Name = "btnOne";
             this.btnOne.ShadowDecoration.BorderRadius = 15;
             this.btnOne.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -393,7 +397,7 @@
             this.btnFour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnFour.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnFour.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnFour.Location = new System.Drawing.Point(48, 402);
+            this.btnFour.Location = new System.Drawing.Point(48, 493);
             this.btnFour.Name = "btnFour";
             this.btnFour.ShadowDecoration.BorderRadius = 15;
             this.btnFour.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -416,7 +420,7 @@
             this.btnSeven.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnSeven.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnSeven.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnSeven.Location = new System.Drawing.Point(48, 338);
+            this.btnSeven.Location = new System.Drawing.Point(48, 427);
             this.btnSeven.Name = "btnSeven";
             this.btnSeven.ShadowDecoration.BorderRadius = 15;
             this.btnSeven.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -439,7 +443,7 @@
             this.btnClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnClear.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnClear.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnClear.Location = new System.Drawing.Point(48, 274);
+            this.btnClear.Location = new System.Drawing.Point(48, 295);
             this.btnClear.Name = "btnClear";
             this.btnClear.ShadowDecoration.BorderRadius = 15;
             this.btnClear.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -462,7 +466,7 @@
             this.btnDot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnDot.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnDot.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnDot.Location = new System.Drawing.Point(138, 530);
+            this.btnDot.Location = new System.Drawing.Point(138, 625);
             this.btnDot.Name = "btnDot";
             this.btnDot.ShadowDecoration.BorderRadius = 15;
             this.btnDot.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -485,7 +489,7 @@
             this.btnEqual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
             this.btnEqual.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnEqual.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnEqual.Location = new System.Drawing.Point(228, 530);
+            this.btnEqual.Location = new System.Drawing.Point(228, 625);
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.ShadowDecoration.BorderRadius = 15;
             this.btnEqual.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -552,7 +556,7 @@
             this.btnDelet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnDelet.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnDelet.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnDelet.Location = new System.Drawing.Point(140, 274);
+            this.btnDelet.Location = new System.Drawing.Point(140, 295);
             this.btnDelet.Name = "btnDelet";
             this.btnDelet.ShadowDecoration.BorderRadius = 15;
             this.btnDelet.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
@@ -562,12 +566,108 @@
             this.btnDelet.Text = "⌫";
             this.btnDelet.Click += new System.EventHandler(this.btnDelet_Click);
             // 
+            // btnsquare
+            // 
+            this.btnsquare.BackColor = System.Drawing.Color.Transparent;
+            this.btnsquare.BorderRadius = 15;
+            this.btnsquare.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnsquare.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnsquare.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnsquare.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnsquare.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnsquare.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.btnsquare.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnsquare.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnsquare.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnsquare.Location = new System.Drawing.Point(140, 361);
+            this.btnsquare.Name = "btnsquare";
+            this.btnsquare.ShadowDecoration.BorderRadius = 15;
+            this.btnsquare.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnsquare.ShadowDecoration.Enabled = true;
+            this.btnsquare.Size = new System.Drawing.Size(65, 45);
+            this.btnsquare.TabIndex = 26;
+            this.btnsquare.Text = "x²";
+            this.btnsquare.Click += new System.EventHandler(this.btnsquare_Click);
+            // 
+            // btnsqrt
+            // 
+            this.btnsqrt.BackColor = System.Drawing.Color.Transparent;
+            this.btnsqrt.BorderRadius = 15;
+            this.btnsqrt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnsqrt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnsqrt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnsqrt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnsqrt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnsqrt.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.btnsqrt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnsqrt.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnsqrt.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnsqrt.Location = new System.Drawing.Point(48, 361);
+            this.btnsqrt.Name = "btnsqrt";
+            this.btnsqrt.ShadowDecoration.BorderRadius = 15;
+            this.btnsqrt.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnsqrt.ShadowDecoration.Enabled = true;
+            this.btnsqrt.Size = new System.Drawing.Size(65, 45);
+            this.btnsqrt.TabIndex = 25;
+            this.btnsqrt.Text = "√";
+            this.btnsqrt.Click += new System.EventHandler(this.btnsqrt_Click);
+            // 
+            // btnln
+            // 
+            this.btnln.BackColor = System.Drawing.Color.Transparent;
+            this.btnln.BorderRadius = 15;
+            this.btnln.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnln.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnln.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnln.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnln.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnln.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.btnln.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnln.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnln.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnln.Location = new System.Drawing.Point(235, 361);
+            this.btnln.Name = "btnln";
+            this.btnln.ShadowDecoration.BorderRadius = 15;
+            this.btnln.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnln.ShadowDecoration.Enabled = true;
+            this.btnln.Size = new System.Drawing.Size(65, 45);
+            this.btnln.TabIndex = 24;
+            this.btnln.Text = "ln";
+            this.btnln.Click += new System.EventHandler(this.btnln_Click);
+            // 
+            // btnlog2
+            // 
+            this.btnlog2.BackColor = System.Drawing.Color.Transparent;
+            this.btnlog2.BorderRadius = 15;
+            this.btnlog2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnlog2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnlog2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnlog2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnlog2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnlog2.Font = new System.Drawing.Font("Segoe UI", 13.2F);
+            this.btnlog2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnlog2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnlog2.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
+            this.btnlog2.Location = new System.Drawing.Point(235, 295);
+            this.btnlog2.Name = "btnlog2";
+            this.btnlog2.ShadowDecoration.BorderRadius = 15;
+            this.btnlog2.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
+            this.btnlog2.ShadowDecoration.Enabled = true;
+            this.btnlog2.Size = new System.Drawing.Size(65, 45);
+            this.btnlog2.TabIndex = 23;
+            this.btnlog2.Text = "log";
+            this.btnlog2.Click += new System.EventHandler(this.btnlog2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.ClientSize = new System.Drawing.Size(430, 617);
+            this.ClientSize = new System.Drawing.Size(430, 706);
+            this.Controls.Add(this.btnsquare);
+            this.Controls.Add(this.btnsqrt);
+            this.Controls.Add(this.btnln);
+            this.Controls.Add(this.btnlog2);
             this.Controls.Add(this.btnDelet);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.txtStore);
@@ -628,6 +728,10 @@
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button bb;
         private Guna.UI2.WinForms.Guna2Button btnDelet;
+        private Guna.UI2.WinForms.Guna2Button btnsquare;
+        private Guna.UI2.WinForms.Guna2Button btnsqrt;
+        private Guna.UI2.WinForms.Guna2Button btnln;
+        private Guna.UI2.WinForms.Guna2Button btnlog2;
     }
 }
 

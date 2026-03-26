@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{36471436-CED4-4851-9907-554CE787136F}|Calculator.csproj|C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{36471436-CED4-4851-9907-554CE787136F}|Calculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36471436-CED4-4851-9907-554CE787136F}|Calculator.csproj|c:\\users\\asus\\desktop\\daily-coding\\calculator\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36471436-CED4-4851-9907-554CE787136F}|Calculator.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Calculator\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Calculator\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAKsCAAAAAAAAAAAAALkCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T22:42:19.554Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Calculator\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAtwBcBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAlwH8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-22T04:26:18.083Z",
               "EditorCaption": ""
@@ -42,7 +59,8 @@
               "ToolTip": "C:\\Users\\ASUS\\Desktop\\Daily-Coding\\Calculator\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T03:50:41.229Z"
+              "WhenOpened": "2026-03-22T03:50:41.229Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
