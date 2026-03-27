@@ -126,15 +126,26 @@ namespace Calculator
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            if (txtStore.Text != "" || txtResult.Text.Last() == '²'  || count == 7)
+            if (txtStore.Text != "" || txtResult.Text.EndsWith("²")  || count == 7)
             {
                 string input = txtStore.Text.StartsWith(".") ? "0" + txtStore.Text : txtStore.Text;
                 input = txtStore.Text.EndsWith(".") ? txtStore.Text.Substring(0, txtStore.Text.Length - 1) : txtStore.Text;
                 input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
-                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
+                if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || txtResult.Text.EndsWith("²") || count == 7)
                 {
                     if (count == 7)
                         num = prev;
+                    if (txtResult.Text.EndsWith("²"))
+                    {
+                        string input1 = txtResult.Text.Substring(0, txtResult.Text.Length - 1);
+                        if (float.TryParse(input1, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal2))
+                        {
+                            num = (float)Math.Pow(currentVal2, 2);
+                            count = -1;
+                        }
+                            
+                    }
+                        
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -145,7 +156,6 @@ namespace Calculator
                         case 5: num %= currentVal; break;
                         case 6: txtResult.Clear(); break;
                         case 8: num = (float)Math.Sqrt(currentVal); break;
-                        case 9: num = (float)Math.Pow(currentVal, 2); break;
                         case 10: num = (float)Math.Log10(currentVal); break;
                         case 11: num = (float)Math.Log(currentVal); break;
                     }
@@ -179,7 +189,7 @@ namespace Calculator
                         case 5: num %= currentVal; break;
                         case 6: txtResult.Clear(); break;
                         case 8: num = (float)Math.Sqrt(currentVal); break;
-                        case 9: num = (float)Math.Pow(currentVal, 2); break;
+                        //case 9: num = (float)Math.Pow(currentVal, 2); break;
                         case 10: num = (float)Math.Log10(currentVal); break;
                         case 11: num = (float)Math.Log(currentVal); break;
                     }
@@ -377,6 +387,7 @@ namespace Calculator
                 input = txtStore.Text.Contains(".") ? txtStore.Text.TrimEnd('0').TrimEnd('.') : txtStore.Text;
                 if (float.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out float currentVal) || count == 7)
                 {
+                    currentVal = (float)Math.Pow(currentVal, 2);
                     if (count == 7)
                         num = prev;
                     switch (count)
