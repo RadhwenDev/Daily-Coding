@@ -512,12 +512,12 @@
             this.txtStore.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtStore.Font = new System.Drawing.Font("Segoe UI", 15F);
             this.txtStore.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStore.Location = new System.Drawing.Point(48, 180);
+            this.txtStore.Location = new System.Drawing.Point(36, 180);
             this.txtStore.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.txtStore.Name = "txtStore";
             this.txtStore.PlaceholderText = "";
             this.txtStore.SelectedText = "";
-            this.txtStore.Size = new System.Drawing.Size(342, 65);
+            this.txtStore.Size = new System.Drawing.Size(365, 65);
             this.txtStore.TabIndex = 20;
             this.txtStore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -532,14 +532,14 @@
             this.txtResult.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtResult.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
             this.txtResult.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtResult.Font = new System.Drawing.Font("Segoe UI", 20F);
+            this.txtResult.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.txtResult.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtResult.Location = new System.Drawing.Point(48, 78);
+            this.txtResult.Location = new System.Drawing.Point(36, 78);
             this.txtResult.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
             this.txtResult.Name = "txtResult";
             this.txtResult.PlaceholderText = "0";
             this.txtResult.SelectedText = "";
-            this.txtResult.Size = new System.Drawing.Size(341, 68);
+            this.txtResult.Size = new System.Drawing.Size(365, 68);
             this.txtResult.TabIndex = 21;
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -575,7 +575,7 @@
             this.btnsquare.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnsquare.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnsquare.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnsquare.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnsquare.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnsquare.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnsquare.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnsquare.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
@@ -621,7 +621,7 @@
             this.btnln.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnln.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnln.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
-            this.btnln.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.btnln.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.btnln.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnln.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(158)))), ((int)(((byte)(46)))));
             this.btnln.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(52)))), ((int)(((byte)(65)))));
