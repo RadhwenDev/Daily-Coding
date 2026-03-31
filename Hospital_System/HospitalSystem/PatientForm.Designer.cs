@@ -30,16 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbtnMale = new System.Windows.Forms.RadioButton();
+            this.rdbtnFemale = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.BirthDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.isSmoke = new System.Windows.Forms.CheckBox();
+            this.isFat = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -69,12 +69,12 @@
             this.textBox1.Size = new System.Drawing.Size(361, 22);
             this.textBox1.TabIndex = 1;
             // 
-            // textBox2
+            // name
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(361, 22);
-            this.textBox2.TabIndex = 3;
+            this.name.Location = new System.Drawing.Point(112, 96);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(361, 22);
+            this.name.TabIndex = 3;
             // 
             // label2
             // 
@@ -96,27 +96,27 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Gender";
             // 
-            // radioButton1
+            // rdbtnMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(150, 140);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 20);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbtnMale.AutoSize = true;
+            this.rdbtnMale.Location = new System.Drawing.Point(150, 140);
+            this.rdbtnMale.Name = "rdbtnMale";
+            this.rdbtnMale.Size = new System.Drawing.Size(58, 20);
+            this.rdbtnMale.TabIndex = 5;
+            this.rdbtnMale.TabStop = true;
+            this.rdbtnMale.Text = "Male";
+            this.rdbtnMale.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbtnFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(267, 140);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 20);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbtnFemale.AutoSize = true;
+            this.rdbtnFemale.Location = new System.Drawing.Point(267, 140);
+            this.rdbtnFemale.Name = "rdbtnFemale";
+            this.rdbtnFemale.Size = new System.Drawing.Size(74, 20);
+            this.rdbtnFemale.TabIndex = 6;
+            this.rdbtnFemale.TabStop = true;
+            this.rdbtnFemale.Text = "Female";
+            this.rdbtnFemale.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -128,12 +128,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Birth Date";
             // 
-            // dateTimePicker1
+            // BirthDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(150, 182);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(293, 22);
-            this.dateTimePicker1.TabIndex = 8;
+            this.BirthDate.Location = new System.Drawing.Point(150, 182);
+            this.BirthDate.Name = "BirthDate";
+            this.BirthDate.Size = new System.Drawing.Size(293, 22);
+            this.BirthDate.TabIndex = 8;
             // 
             // label5
             // 
@@ -145,25 +145,25 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Options";
             // 
-            // checkBox1
+            // isSmoke
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(150, 245);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(82, 20);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "Smoking";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.isSmoke.AutoSize = true;
+            this.isSmoke.Location = new System.Drawing.Point(150, 245);
+            this.isSmoke.Name = "isSmoke";
+            this.isSmoke.Size = new System.Drawing.Size(82, 20);
+            this.isSmoke.TabIndex = 10;
+            this.isSmoke.Text = "Smoking";
+            this.isSmoke.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // isFat
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(325, 245);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(61, 20);
-            this.checkBox2.TabIndex = 11;
-            this.checkBox2.Text = "Is Fat";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.isFat.AutoSize = true;
+            this.isFat.Location = new System.Drawing.Point(325, 245);
+            this.isFat.Name = "isFat";
+            this.isFat.Size = new System.Drawing.Size(61, 20);
+            this.isFat.TabIndex = 11;
+            this.isFat.Text = "Is Fat";
+            this.isFat.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -173,6 +173,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -266,15 +267,15 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.isFat);
+            this.Controls.Add(this.isSmoke);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.BirthDate);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdbtnFemale);
+            this.Controls.Add(this.rdbtnMale);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -291,16 +292,16 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rdbtnMale;
+        private System.Windows.Forms.RadioButton rdbtnFemale;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker BirthDate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox isSmoke;
+        private System.Windows.Forms.CheckBox isFat;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;

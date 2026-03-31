@@ -4,3 +4,9 @@ C:\Users\ASUS\Desktop\Daily-Coding\HospitalDataAccessLayer\obj\Debug\HospitalDat
 C:\Users\ASUS\Desktop\Daily-Coding\HospitalDataAccessLayer\obj\Debug\HospitalDataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\Daily-Coding\HospitalDataAccessLayer\obj\Debug\HospitalDataAccessLayer.dll
 C:\Users\ASUS\Desktop\Daily-Coding\HospitalDataAccessLayer\obj\Debug\HospitalDataAccessLayer.pdb
+C:\Users\ASUS\Desktop\Daily-Coding\Hospital_System\HospitalDataAccessLayer\bin\Debug\HospitalDataAccessLayer.dll
+C:\Users\ASUS\Desktop\Daily-Coding\Hospital_System\HospitalDataAccessLayer\bin\Debug\HospitalDataAccessLayer.pdb
+C:\Users\ASUS\Desktop\Daily-Coding\Hospital_System\HospitalDataAccessLayer\obj\Debug\HospitalDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Daily-Coding\Hospital_System\HospitalDataAccessLayer\obj\Debug\HospitalDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Daily-Coding\Hospital_System\HospitalDataAccessLayer\obj\Debug\HospitalDataAccessLayer.dll
+C:\Users\ASUS\Desktop\Daily-Coding\Hospital_System\HospitalDataAccessLayer\obj\Debug\HospitalDataAccessLayer.pdb
