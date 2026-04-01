@@ -36,5 +36,31 @@ namespace HospitalSystem
                 MessageBox.Show("🎉Patient Added Successfully with ID = " + patient.ID);
                 
         }
+
+        private void btnSearchByID_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(ID.Text, out int patientID))
+            {
+                clsPatient patient = clsPatient.Find(patientID);
+                if (patient != null)
+                {
+                    name.Text = patient.Name;
+                    if (patient.Gender) rdbtnMale.Checked = true;
+                    else rdbtnFemale.Checked = true;
+                    BirthDate.Value = Convert.ToDateTime(patient.BirthDate);
+                    if (patient.isSmoke) isSmoke.Checked = true;
+                    else isSmoke.Checked = false;
+                    if (patient.isFat) isFat.Checked = true;
+                    else isFat.Checked = false;
+                }
+                else
+                {
+                    MessageBox.Show("⚠️ Patient with ID = " + patientID + " Not Found");
+                }
+                    
+            }
+                
+            
+        }
     }
 }

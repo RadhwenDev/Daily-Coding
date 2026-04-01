@@ -41,7 +41,7 @@ namespace HospitalBusinessLayer
             this.Gender = Gender;
             this.isSmoke = isSmoke;
             this.isFat = isFat;
-            this.BirthDate = DateTime.Now;
+            this.BirthDate = BirthDate;
             Mode = enMode.Update;
         }
 
@@ -54,6 +54,16 @@ namespace HospitalBusinessLayer
         {
             this.ID = clsDataPatient.AddNewPatient(this.Name, this.Gender, this.BirthDate, this.isSmoke, this.isFat);
             return this.ID != -1;
+        }
+
+        public static clsPatient Find(int ID)
+        {
+            string Name = "";
+            bool Gender = false, isSmoke = false, isFat = false;
+            DateTime BirthDate = DateTime.Now;
+            if (clsDataPatient.GetPatientInfoByID(ID, ref Name, ref Gender, ref BirthDate, ref isSmoke, ref isFat))
+                return new clsPatient(ID, Name, Gender, BirthDate, isSmoke, isFat);
+            return null;
         }
 
         public bool Save()

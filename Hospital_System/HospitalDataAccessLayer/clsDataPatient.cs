@@ -38,7 +38,7 @@ namespace HospitalDataAccessLayer
             string query = @"INSERT INTO Patient (Name, Gender, BirthDate, smoking, isFat)
                             VALUES (@Name, @Gender, @BirthDate, @smoking, @isFat);
                             SELECT SCOPE_IDENTITY();";
-            SqlCommand command = new SqlCommand(@query, connection);
+            SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@Name", Name);
             command.Parameters.AddWithValue("@Gender", Gender);
             command.Parameters.AddWithValue("@BirthDate", BirthDate);
@@ -56,7 +56,34 @@ namespace HospitalDataAccessLayer
             finally { connection.Close(); }
             return contactID;
         }
+        public static bool GetPatientInfoByID(int ID, ref string Name, ref bool Gender, ref DateTime BirthDate, ref bool isSmoke, ref bool isFat)
+        {
+            bool isFound = false;
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            string query = @"SELECT * FROM Patient WHERE ID = @ID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID", ID);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    Name = (string)reader["Name"];
+                    Gender = (bool)reader["Gender"];
+                    BirthDate = (DateTime)reader["BirthDate"];
+                    isSmoke = (bool)reader["smoking"];
+                    isFat = (bool)reader["isFat"];
+                    isFound = true;
+                }
+                reader.Close();
+            }
+            catch (Exception) { isFound = false; }
+            finally { connection.Close(); }
+            return isFound;
+        }
     }
+
 
 
 }

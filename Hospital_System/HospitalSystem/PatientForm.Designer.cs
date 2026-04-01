@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.TextBox();
             this.name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +49,7 @@
             this.colBirthDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSmoking = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colisFat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearchByID = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,12 +63,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
-            // textBox1
+            // ID
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(361, 22);
-            this.textBox1.TabIndex = 1;
+            this.ID.Location = new System.Drawing.Point(112, 51);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(361, 22);
+            this.ID.TabIndex = 1;
             // 
             // name
             // 
@@ -258,12 +259,23 @@
             this.colisFat.Name = "colisFat";
             this.colisFat.ReadOnly = true;
             // 
+            // btnSearchByID
+            // 
+            this.btnSearchByID.Location = new System.Drawing.Point(503, 45);
+            this.btnSearchByID.Name = "btnSearchByID";
+            this.btnSearchByID.Size = new System.Drawing.Size(173, 34);
+            this.btnSearchByID.TabIndex = 15;
+            this.btnSearchByID.Text = "Search By ID";
+            this.btnSearchByID.UseVisualStyleBackColor = true;
+            this.btnSearchByID.Click += new System.EventHandler(this.btnSearchByID_Click);
+            // 
             // PatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1063, 677);
+            this.Controls.Add(this.btnSearchByID);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -277,7 +289,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.name);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ID);
             this.Controls.Add(this.label1);
             this.Name = "PatientForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -291,7 +303,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ID;
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -311,5 +323,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colBirthDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSmoking;
         private System.Windows.Forms.DataGridViewTextBoxColumn colisFat;
+        private System.Windows.Forms.Button btnSearchByID;
     }
 }
