@@ -62,5 +62,42 @@ namespace HospitalSystem
                 
             
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(ID.Text, out int patientID))
+            {
+                clsPatient patient = clsPatient.Find(patientID);
+                if (patient != null)
+                {
+                    patient.Name = name.Text;
+                    if(patient.Gender) patient.Gender = rdbtnMale.Checked;
+                    else patient.Gender = rdbtnFemale.Checked;
+                    patient.BirthDate = BirthDate.Value;
+                    if (patient.isSmoke) patient.isSmoke = isSmoke.Checked;
+                    else patient.isSmoke = isSmoke.Checked;
+                    if (patient.isFat) patient.isFat = isFat.Checked;
+                    else patient.isFat = isFat.Checked;
+
+                    if(patient.Save())
+                        MessageBox.Show("🎉Patient Updated Successfully with ID = " + patient.ID);
+                }
+                else
+                    MessageBox.Show("⚠️Patient with ID = " + patientID + " doesn't exist");
+            }
+            else
+                MessageBox.Show("⚠️Please enter a correct ID");
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(ID.Text, out int patientID))
+            {
+                if (clsPatient.DeletePatientByID(patientID))
+                    MessageBox.Show("🎉Patient Deleted Successfully with ID = " + patientID);
+            } 
+            else
+                MessageBox.Show("⚠️Please enter a correct ID");
+        }
     }
 }

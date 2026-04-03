@@ -50,6 +50,8 @@
             this.colSmoking = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colisFat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSearchByID = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,9 +170,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(211, 289);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(216, 289);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 34);
+            this.button1.Size = new System.Drawing.Size(141, 34);
             this.button1.TabIndex = 12;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
@@ -178,12 +181,16 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.LawnGreen;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button2.Location = new System.Drawing.Point(831, 289);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(179, 34);
             this.button2.TabIndex = 13;
             this.button2.Text = "Select All";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
@@ -261,13 +268,44 @@
             // 
             // btnSearchByID
             // 
+            this.btnSearchByID.BackColor = System.Drawing.Color.DimGray;
+            this.btnSearchByID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchByID.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchByID.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnSearchByID.Location = new System.Drawing.Point(503, 45);
             this.btnSearchByID.Name = "btnSearchByID";
             this.btnSearchByID.Size = new System.Drawing.Size(173, 34);
             this.btnSearchByID.TabIndex = 15;
             this.btnSearchByID.Text = "Search By ID";
-            this.btnSearchByID.UseVisualStyleBackColor = true;
+            this.btnSearchByID.UseVisualStyleBackColor = false;
             this.btnSearchByID.Click += new System.EventHandler(this.btnSearchByID_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(41, 289);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(141, 34);
+            this.btnUpdate.TabIndex = 16;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDelete.Location = new System.Drawing.Point(391, 289);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(141, 34);
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // PatientForm
             // 
@@ -275,6 +313,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1063, 677);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSearchByID);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
@@ -324,5 +364,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colSmoking;
         private System.Windows.Forms.DataGridViewTextBoxColumn colisFat;
         private System.Windows.Forms.Button btnSearchByID;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

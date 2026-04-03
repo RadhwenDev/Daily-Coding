@@ -82,6 +82,47 @@ namespace HospitalDataAccessLayer
             finally { connection.Close(); }
             return isFound;
         }
+
+        public static bool UpdateContact(int ID, string Name, bool Gender, DateTime BirthDate, bool isSmoke, bool isFat)
+        {
+            int rowAffected = 0;
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            string query = @"UPDATE Patient SET Name = @Name, Gender = @Gender, BirthDate = @BirthDate,
+                             Smoking = @isSmoke, isFat = @isFat WHERE ID = @ID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID", ID);
+            command.Parameters.AddWithValue("@Name", Name);
+            command.Parameters.AddWithValue("@Gender", Gender);
+            command.Parameters.AddWithValue("@BirthDate", BirthDate);
+            command.Parameters.AddWithValue("@isSmoke", isSmoke);
+            command.Parameters.AddWithValue("@isFat", isFat);
+
+            try
+            {
+                connection.Open();
+                rowAffected = command.ExecuteNonQuery();
+            }
+            catch (Exception) { return false; }
+            finally{ connection.Close(); }
+            return rowAffected > 0;
+        }
+
+        public static bool DeletePatientByID(int ID)
+        {
+            int rowAffected = 0;
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+            string query = "DELETE FROM Patient WHERE ID = @ID";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@ID", ID);
+            try
+            {
+                connection.Open();
+                rowAffected = command.ExecuteNonQuery();
+            }
+            catch { return false; }
+            finally{ connection.Close(); }
+            return rowAffected > 0;
+        }
     }
 
 

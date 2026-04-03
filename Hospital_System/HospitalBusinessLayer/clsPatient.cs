@@ -56,6 +56,10 @@ namespace HospitalBusinessLayer
             return this.ID != -1;
         }
 
+        public bool _UpdatePatient()
+        {
+            return clsDataPatient.UpdateContact(this.ID, this.Name, this.Gender, this.BirthDate, this.isSmoke, this.isFat);
+        }
         public static clsPatient Find(int ID)
         {
             string Name = "";
@@ -64,6 +68,11 @@ namespace HospitalBusinessLayer
             if (clsDataPatient.GetPatientInfoByID(ID, ref Name, ref Gender, ref BirthDate, ref isSmoke, ref isFat))
                 return new clsPatient(ID, Name, Gender, BirthDate, isSmoke, isFat);
             return null;
+        }
+
+        public static bool DeletePatientByID(int ID)
+        {
+            return clsDataPatient.DeletePatientByID(ID);
         }
 
         public bool Save()
@@ -76,7 +85,9 @@ namespace HospitalBusinessLayer
                         Mode = enMode.Update;
                         return true;
                     }
-                    return false;             
+                    return false;
+                case enMode.Update:
+                    return _UpdatePatient();
             }
             return false;
         }
