@@ -77,7 +77,7 @@ namespace Calculator
         private void btnZero_Click(object sender, EventArgs e)
         {
             char lastChar = txtStore.Text.Last();
-            char[] operators = { '+', '-', '*', '/' };
+            char[] operators = { '+', '-', '*', '/', '%' };
             if (txtStore.Text != "" && !operators.Contains(lastChar) )
                 txtStore.Text += "0";
         }
@@ -126,6 +126,8 @@ namespace Calculator
                             count = 0;
                     }
                     isPow();
+                    if (prevCount == 0)
+                        count = 0;
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -163,6 +165,8 @@ namespace Calculator
                             count = 0;
                     }
                     isPow();
+                    if(prevCount ==  0)
+                        count = 0;
 
                     switch (count)
                     {
@@ -201,6 +205,8 @@ namespace Calculator
                             count = 0;
                     }
                     isPow();
+                    if (prevCount == 0)
+                        count = 0;
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -236,6 +242,8 @@ namespace Calculator
                             count = 0;
                     }
                     isPow();
+                    if (prevCount == 0)
+                        count = 0;
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -273,6 +281,8 @@ namespace Calculator
                             count = 0;
                     }
                     isPow();
+                    if (prevCount == 0)
+                        count = 0;
                     switch (count)
                     {
                         case 0: num = currentVal; break;
@@ -493,22 +503,29 @@ namespace Calculator
             if (txtStore.Text != "" && count != 6)
             {
                 txtStore.Text = txtStore.Text.Remove(txtStore.Text.Length - 1);
-                num /= 10;
                 prevCount = count;
                 count = 7;
             }
-                
+
+            
             if (txtResult.Text != "" && count != 6)
             {
-                if (txtResult.Text == "log")
-                    txtResult.Text = txtResult.Text.Remove(txtResult.Text.Length - 3);
-                else if (txtResult.Text == "ln")
-                    txtResult.Text = txtResult.Text.Remove(txtResult.Text.Length - 2);
+                char lastChar = txtResult.Text.Last();
+                char[] operators = { '+', '-', '*', '/', '%' };
+                if (!operators.Contains(lastChar))
+                {
+                    if (txtResult.Text == "log")
+                        txtResult.Text = txtResult.Text.Remove(txtResult.Text.Length - 3);
+                    else if (txtResult.Text == "ln")
+                        txtResult.Text = txtResult.Text.Remove(txtResult.Text.Length - 2);
+                    else
+                        txtResult.Text = txtResult.Text.Remove(txtResult.Text.Length - 1);
+                    prevCount = count;
+                    count = 7;
+                    prev = num;
+                }
                 else
-                    txtResult.Text = txtResult.Text.Remove(txtResult.Text.Length - 1);
-                prevCount = count;
-                count = 7;
-                prev = num;
+                    count = prevCount;
             }
                 
         }
